@@ -1,6 +1,9 @@
 # Middleware
 
-[![Build Status](https://secure.travis-ci.org/mitchellh/middleware.png?branch=master)](http://travis-ci.org/mitchellh/middleware)
+[![Build Status](https://secure.travis-ci.org/fialao/middleware.png)](https://travis-ci.org/fialao/middleware)
+[![Dependency Status](https://gemnasium.com/fialao/middleware.png)](https://gemnasium.com/fialao/middleware)
+[![Code Climate](https://codeclimate.com/github/fialao/middleware.png)](https://codeclimate.com/github/fialao/middleware)
+[![Coverage Status](https://coveralls.io/repos/fialao/middleware/badge.png)](https://coveralls.io/r/fialao/middleware)
 
 This is a generalized library for using middleware patterns within
 your Ruby projects.

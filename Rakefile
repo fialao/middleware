@@ -1,9 +1,18 @@
 #!/usr/bin/env rake
 require "bundler/gem_tasks"
-require "rspec/core/rake_task"
 
-# RSpec test task
-RSpec::Core::RakeTask.new
+# Documentation
+require 'yard'
+YARD::Rake::YardocTask.new { |t| t.files = ['lib/**/*.rb'] }
 
-# Make sure the default is to run RSpec
-task :default => "spec"
+# RSpec
+require 'rspec/core/rake_task'
+
+desc "Run all RSpecs"
+RSpec::Core::RakeTask.new(:spec) do |t|
+  t.rspec_opts = '--format Fuubar'
+  t.pattern    = 'spec/**/*.spec.rb'
+end
+RSpec::Core::RakeTask.new(:rspec) do |t|
+  t.pattern    = 'spec/**/*.spec.rb'
+end
